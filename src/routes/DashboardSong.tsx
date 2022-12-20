@@ -1,8 +1,7 @@
 import React from 'react';
 import { useAuthStore } from '../state/AuthStore';
 import { useNavigate } from 'react-router-dom';
-import { SpotifyTrackComponent } from '../components';
-import { NavBar } from '../components/NavBar/NavBar';
+import { SpotifyTrackComponent, NavBar } from '../components';
 import { useSpotifyStore } from '../state/SpotifyStore';
 
 export function DashboardSong(): React.ReactElement {
