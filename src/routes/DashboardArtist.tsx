@@ -24,18 +24,12 @@ export function DashboardArtist(): React.ReactElement {
   return (
     <div className="h-screen flex flex-col">
       <NavBar logout={logout} />
-      <div className="flex">
-        <div className="w-fit flex flex-row flex-wrap justify-evenly">
-          {spotifyStore.topArtists.map((artist, index) => {
-            return (
-              <SpotifyArtistComponent
-                artist={artist}
-                index={index}
-                key={index}
-              />
-            );
-          })}
-        </div>
+      <div className="w-fit flex flex-row flex-wrap justify-evenly pb-8">
+        {spotifyStore.topArtists.map((artist, index) => {
+          return (
+            <SpotifyArtistComponent artist={artist} index={index} key={index} />
+          );
+        })}
       </div>
     </div>
   );

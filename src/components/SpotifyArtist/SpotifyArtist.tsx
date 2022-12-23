@@ -13,7 +13,7 @@ export function SpotifyArtistComponent(props: {
 
   return (
     <div
-      className="flex flex-row self-start items-center mx-8 my-5 bg-zinc-900 rounded-2xl p-4 w-fit h-25 hover:bg-green-500 cursor-pointer transition-all group"
+      className="flex flex-row self-start items-center mx-8 my-5 bg-zinc-900 rounded-2xl p-4 w-fit h-25 hover:bg-green-500 hover:mx-6 hover:my-3 cursor-pointer transition-all group"
       onClick={() => window.open(props.artist.external_urls.spotify)}>
       <p className="text-white text-xl bg-inherit">{props.index + 1}.</p>
       <img

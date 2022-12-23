@@ -31,7 +31,7 @@ export class SpotifyHandler {
       },
       body: new URLSearchParams({
         code,
-        redirect_uri: 'http://127.0.0.1:5173/connect/callback',
+        redirect_uri: import.meta.env.VITE_DOMAIN + '/connect/callback',
         grant_type: 'authorization_code',
       }),
     });

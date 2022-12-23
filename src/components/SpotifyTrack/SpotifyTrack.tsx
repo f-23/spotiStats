@@ -9,7 +9,7 @@ export function SpotifyTrackComponent(props: {
 
   return (
     <div
-      className="flex flex-row self-start items-center my-5 mx-8 bg-zinc-900 rounded-2xl p-5 w-fit h-25 hover:bg-green-500 group cursor-pointer transition-all"
+      className="flex flex-row self-start items-center my-5 mx-8 bg-zinc-900 rounded-2xl p-5 w-fit h-25 hover:bg-green-500 hover:mx-6 hover:my-3 group cursor-pointer transition-all"
       onClick={() => window.open(props.track.external_urls.spotify)}>
       <p className="text-white text-xl bg-inherit">{props.index + 1}.</p>
       <img
