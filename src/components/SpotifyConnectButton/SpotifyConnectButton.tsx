@@ -5,11 +5,11 @@ export function SpotifyConnectButton(): React.ReactElement {
   const startLoginFlow = (): void => {
     const queryParams = new URLSearchParams();
     queryParams.append('response_type', 'code');
-    queryParams.append('client_id', 'c61ea3bb5f7147eda0cef93a35315c73');
+    queryParams.append('client_id', import.meta.env.VITE_SPOTIFY_CLIENT_ID);
     queryParams.append('scope', 'user-top-read');
     queryParams.append(
       'redirect_uri',
-      'http://127.0.0.1:5173/connect/callback',
+      import.meta.env.VITE_DOMAIN + '/connect/callback',
     );
 
     window.location.replace(
