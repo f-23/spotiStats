@@ -4,5 +4,7 @@ import './index.css';
 import { Router } from './Router';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <Router />,
+  <div className="w-screen h-screen">
+    <Router />
+  </div>,
 );
