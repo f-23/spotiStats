@@ -22,7 +22,7 @@ export function DashboardArtist(): React.ReactElement {
   };
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen w-screen flex flex-col">
       <NavBar logout={logout} />
       <div className="w-fit flex flex-row flex-wrap justify-evenly pb-8">
         {spotifyStore.topArtists.map((artist, index) => {

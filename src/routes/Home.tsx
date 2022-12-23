@@ -14,7 +14,7 @@ export function Home(): React.ReactElement {
   }, [authStore.isConnected]);
 
   return (
-    <div className="h-screen flex flex-col justify-center">
+    <div className="h-screen w-screen flex flex-col justify-center">
       <div className="h-fit flex flex-col flex-grow justify-evenly items-center">
         <div className="w-fit h-fit">
           <p className="text-white text-4xl tracking-widest text-center">

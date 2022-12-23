@@ -22,7 +22,7 @@ export function DashboardSong(): React.ReactElement {
   };
 
   return (
-    <div className="h-screen flex flex-col transition-all">
+    <div className="h-screen w-screen flex flex-col transition-all">
       <NavBar logout={logout} />
 
       <div className="w-fit flex flex-row flex-wrap justify-evenly pb-8">
